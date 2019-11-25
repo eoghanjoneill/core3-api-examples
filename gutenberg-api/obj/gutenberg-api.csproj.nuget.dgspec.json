@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/eoghan/dev/core3-api-examples/gutenberg-api/gutenberg-api.csproj": {}
+    "C:\\repos\\core3-api-examples\\gutenberg-api\\gutenberg-api.csproj": {}
   },
   "projects": {
-    "/home/eoghan/dev/core3-api-examples/gutenberg-api/gutenberg-api.csproj": {
+    "C:\\repos\\core3-api-examples\\gutenberg-api\\gutenberg-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eoghan/dev/core3-api-examples/gutenberg-api/gutenberg-api.csproj",
+        "projectUniqueName": "C:\\repos\\core3-api-examples\\gutenberg-api\\gutenberg-api.csproj",
         "projectName": "gutenberg-api",
-        "projectPath": "/home/eoghan/dev/core3-api-examples/gutenberg-api/gutenberg-api.csproj",
-        "packagesPath": "/home/eoghan/.nuget/packages/",
-        "outputPath": "/home/eoghan/dev/core3-api-examples/gutenberg-api/obj/",
+        "projectPath": "C:\\repos\\core3-api-examples\\gutenberg-api\\gutenberg-api.csproj",
+        "packagesPath": "C:\\Users\\Eoghan.ONeill.AUCERNA\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\core3-api-examples\\gutenberg-api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/eoghan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Eoghan.ONeill.AUCERNA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
