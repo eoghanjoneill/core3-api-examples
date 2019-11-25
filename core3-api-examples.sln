@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gutenberg-api", "gutenberg-api\gutenberg-api.csproj", "{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gutenberg-api", "gutenberg-api\gutenberg-api.csproj", "{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseLibrary.API", "CourseLibrary.API\CourseLibrary.API.csproj", "{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,23 @@ Global
 		{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}.Release|x64.Build.0 = Release|Any CPU
 		{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}.Release|x86.ActiveCfg = Release|Any CPU
 		{28AE5D2E-5676-4A0F-B5DD-9AFDC81132B0}.Release|x86.Build.0 = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|x64.Build.0 = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Debug|x86.Build.0 = Debug|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|x64.ActiveCfg = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|x64.Build.0 = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|x86.ActiveCfg = Release|Any CPU
+		{6D21CCB4-58A9-4DCE-A155-B20A6B52F330}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9300F8D1-F791-49A3-8064-BBDADE498E36}
 	EndGlobalSection
 EndGlobal

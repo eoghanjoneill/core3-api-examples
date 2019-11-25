@@ -25,7 +25,6 @@ C:\repos\core3-api-examples\gutenberg-api\bin\Debug\netcoreapp3.0\gutenberg-api.
 C:\repos\core3-api-examples\gutenberg-api\bin\Debug\netcoreapp3.0\gutenberg-api.runtimeconfig.dev.json
 C:\repos\core3-api-examples\gutenberg-api\bin\Debug\netcoreapp3.0\gutenberg-api.dll
 C:\repos\core3-api-examples\gutenberg-api\bin\Debug\netcoreapp3.0\gutenberg-api.pdb
-C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.csprojAssemblyReference.cache
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\staticwebassets\gutenberg-api.StaticWebAssets.Manifest.cache
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\staticwebassets\gutenberg-api.StaticWebAssets.xml
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.MvcApplicationPartsAssemblyInfo.cache
@@ -34,3 +33,4 @@ C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.RazorTargetAssemblyInfo.cache
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.dll
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.pdb
+C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.csprojAssemblyReference.cache
