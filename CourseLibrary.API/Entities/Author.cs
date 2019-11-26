@@ -25,6 +25,6 @@ namespace CourseLibrary.API.Entities
         public string MainCategory { get; set; }
 
         public ICollection<Course> Courses { get; set; }
-            = new List<Course>();
+            = new List<Course>();                
     }
 }
