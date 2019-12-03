@@ -33,4 +33,3 @@ C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.RazorTargetAssemblyInfo.cache
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.dll
 C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.pdb
-C:\repos\core3-api-examples\gutenberg-api\obj\Debug\netcoreapp3.0\gutenberg-api.csprojAssemblyReference.cache
