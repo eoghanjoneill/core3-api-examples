@@ -16,13 +16,23 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CourseLibrary.API": {
+    "EoghanDevVM": {
       "commandName": "Project",
       "launchUrl": "weatherforecast",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONN_STRING": "Server=(localdb)\\mssqllocaldb;Database=CourseLibraryDB;Trusted_Connection=True;"
       },
       "applicationUrl": "http://localhost:51044"
+    },    
+    "EoghanLaptop": {
+        "commandName": "Project",
+      "launchUrl": "weatherforecast",      
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONN_STRING": "Server=LON-LT-BTSXZW2\\SQLEXPRESS;Database=CourseLibraryDB;Trusted_Connection=True;"
+      },
+      "applicationUrl": "http://localhost:51044"      
     }
   }
 }

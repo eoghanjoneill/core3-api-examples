@@ -31,11 +31,10 @@ namespace CourseLibrary.API
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<ICourseLibraryRepository, CourseLibraryRepository>();
-
+            var connectionString = Configuration["CONN_STRING"];
             services.AddDbContext<CourseLibraryContext>(options =>
             {
-                options.UseSqlServer(
-                    @"Server=(localdb)\mssqllocaldb;Database=CourseLibraryDB;Trusted_Connection=True;");
+                options.UseSqlServer(connectionString);
             }); 
         }
 
