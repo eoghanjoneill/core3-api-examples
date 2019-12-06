@@ -11,28 +11,24 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "EoghanDevVM": {
       "commandName": "Project",
-      "launchUrl": "weatherforecast",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "CONN_STRING": "Server=(localdb)\\mssqllocaldb;Database=CourseLibraryDB;Trusted_Connection=True;"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:51044"
-    },    
+    },
     "EoghanLaptop": {
-        "commandName": "Project",
-      "launchUrl": "weatherforecast",      
+      "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "CONN_STRING": "Server=LON-LT-BTSXZW2\\SQLEXPRESS;Database=CourseLibraryDB;Trusted_Connection=True;"
+        "CONN_STRING": "Server=LON-LT-BTSXZW2\\SQLEXPRESS;Database=CourseLibraryDB;Trusted_Connection=True;",
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:51044"      
+      "applicationUrl": "http://localhost:51044"
     }
   }
 }

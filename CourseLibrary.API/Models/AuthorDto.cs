@@ -13,8 +13,6 @@ namespace CourseLibrary.API.Models
 
         public int Age { get; set; }
 
-        public DateTimeOffset DateOfBirth { get; set; }
-
         public string MainCategory { get; set; }
     }
 }
