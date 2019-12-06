@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CourseLibrary.API.Entities;
 using CourseLibrary.API.Models;
-using CourseLibrary.API.Utilities;
+using CourseLibrary.API.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,5 +1,5 @@
 ﻿using CourseLibrary.API.Entities;
-using CourseLibrary.API.Utilities;
+using CourseLibrary.API.Helpers;
 using NUnit.Framework;
 using System;
 

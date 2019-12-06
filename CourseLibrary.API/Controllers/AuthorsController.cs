@@ -6,7 +6,7 @@ using AutoMapper;
 using CourseLibrary.API.Models;
 using CourseLibrary.API.ResourceParameters;
 using CourseLibrary.API.Services;
-using CourseLibrary.API.Utilities;
+using CourseLibrary.API.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -62,6 +62,13 @@ namespace CourseLibrary.API.Controllers
             return CreatedAtRoute(nameof(GetAuthor)
                 , new { authorId = authorToReturn.Id }
                 , authorToReturn);
+        }
+
+        [HttpOptions]
+        public IActionResult GetAuthorOptions()
+        {
+            Response.Headers.Add("Allow", "GET,OPTIONS,POST");
+            return Ok();
         }
 
         [HttpGet("HiThere")]

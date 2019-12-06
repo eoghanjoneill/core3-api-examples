@@ -38,7 +38,7 @@ namespace CourseLibrary.API.Controllers
             return Ok(_mapper.Map<IEnumerable<CourseDto>>(courses));
         }
 
-        [HttpGet("{courseId}")]
+        [HttpGet("{courseId}", Name = nameof(GetCourseForAuthor))]
         public ActionResult<CourseDto> GetCourseForAuthor(Guid authorId, Guid courseId)
         {
             var course = _courseLibraryRepository.GetCourse(authorId, courseId);
@@ -47,6 +47,42 @@ namespace CourseLibrary.API.Controllers
                 return NotFound();
             }
             return Ok(_mapper.Map<CourseDto>(course));
+        }
+
+        [HttpPost]
+        public ActionResult<CourseDto> CreateCourseForAuthor(Guid authorId, 
+            CourseForCreationDto courseForCreationDto)
+        {
+            if (!_courseLibraryRepository.AuthorExists(authorId))
+            {
+                return NotFound();
+            }
+            var courseEntity = _mapper.Map<Entities.Course>(courseForCreationDto);
+            _courseLibraryRepository.AddCourse(authorId, courseEntity);
+            _courseLibraryRepository.Save();
+
+            var courseDto = _mapper.Map<CourseDto>(courseEntity);
+            return CreatedAtRoute(nameof(GetCourseForAuthor)
+                , new { authorId = authorId, courseId = courseDto.Id }
+                , courseDto);
+        }
+
+        [HttpPut("{courseId}")]
+        public ActionResult UpdateCourseForAuthor(Guid authorId, Guid courseId, CourseForUpdateDto courseForUpdateDto)
+        {
+            if (!_courseLibraryRepository.AuthorExists(authorId))
+            {
+                return NotFound();
+            }
+            var courseForAuthorFromRepo = _courseLibraryRepository.GetCourse(authorId, courseId);
+            if (courseForAuthorFromRepo is null)
+            {
+                return NotFound();
+            }
+
+            _mapper.Map(courseForUpdateDto, courseForAuthorFromRepo);
+            _courseLibraryRepository.UpdateCourse(courseForAuthorFromRepo);
+            return Ok();
         }
     }
 }

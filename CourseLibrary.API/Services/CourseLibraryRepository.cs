@@ -88,6 +88,14 @@ namespace CourseLibrary.API.Services
             _context.Authors.Add(author);
         }
 
+        public void AddAuthors(IEnumerable<Author> authors)
+        {            
+            foreach (var author in authors)
+            {
+                AddAuthor(author);
+            }
+        }
+
         public bool AuthorExists(Guid authorId)
         {
             if (authorId == Guid.Empty)
