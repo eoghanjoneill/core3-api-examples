@@ -74,15 +74,22 @@ namespace CourseLibrary.API.Controllers
             {
                 return NotFound();
             }
-            var courseForAuthorFromRepo = _courseLibraryRepository.GetCourse(authorId, courseId);
-            if (courseForAuthorFromRepo is null)
+            var courseEntity = _courseLibraryRepository.GetCourse(authorId, courseId);
+            if (courseEntity == null)
             {
-                return NotFound();
+               //var courseToAdd = _mapper
             }
 
-            _mapper.Map(courseForUpdateDto, courseForAuthorFromRepo);
-            _courseLibraryRepository.UpdateCourse(courseForAuthorFromRepo);
-            return Ok();
+            //automapper will:
+            //1) map the entity to a CourseForUpdateDto
+            //2) apply the updated field values to that dto
+            //3) map the CourseForUpdateDto back to an entity
+            _mapper.Map(courseForUpdateDto, courseEntity);
+
+            _courseLibraryRepository.UpdateCourse(courseEntity);
+            _courseLibraryRepository.Save();
+
+            return NoContent();
         }
     }
 }
