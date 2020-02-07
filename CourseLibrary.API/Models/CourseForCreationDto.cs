@@ -6,8 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace CourseLibrary.API.Models
-{
-    [CourseTitleMustBeDifferentFromDescription(ErrorMessage = "title != desc")]
+{    
     public class CourseForCreationDto : CourseForManipulationDto // : IValidatableObject
     {
         
